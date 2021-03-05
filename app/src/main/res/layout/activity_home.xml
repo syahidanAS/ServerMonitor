@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="#050533">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monitoring"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/subHeader"
+        android:layout_below="@id/header"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status Analytics"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/containerStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/subHeader"
+        android:background="#414177">
+        <LinearLayout
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="#2c2c5e">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SERVER STATUS"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/content1"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/temprature"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPU :"
+                android:layout_gravity="center"
+                android:textColor="#cfcfd3"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/cpuTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#cfcfd3"
+                android:textSize="20sp"
+                android:text="loading..."
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" °C"
+                android:layout_gravity="center"
+                android:textColor="#cfcfd3"
+                android:textSize="20sp"
+                android:layout_marginLeft="3dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/content2"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/content1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cpu"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usage :"
+                android:layout_gravity="center"
+                android:textColor="#cfcfd3"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/cpuUsage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="loading..."
+                android:layout_gravity="center"
+                android:textColor="#cfcfd3"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" %"
+                android:layout_gravity="center"
+                android:textColor="#cfcfd3"
+                android:textSize="20sp"
+                android:layout_marginLeft="3dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/content3"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/content2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ram"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usage :"
+                android:layout_gravity="center"
+                android:textColor="#cfcfd3"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/ramUsage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="loading..."
+                android:layout_gravity="center"
+                android:textColor="#cfcfd3"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" %"
+                android:layout_gravity="center"
+                android:textColor="#cfcfd3"
+                android:textSize="20sp"
+                android:layout_marginLeft="3dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/containerCPU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/containerStatus"
+        android:background="#414177">
+        <LinearLayout
+            android:id="@+id/cpuAnalytic"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="#2c2c5e">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPU USAGE"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        
+       <LinearLayout
+           android:id="@+id/containerCpuChart"
+           android:layout_below="@id/cpuAnalytic"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <com.github.mikephil.charting.charts.LineChart
+               android:id="@+id/cpuChart"
+               android:layout_width="match_parent"
+               android:layout_height="150dp">
+
+           </com.github.mikephil.charting.charts.LineChart>
+
+       </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/containerControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/containerCPU"
+        android:background="#414177">
+        <LinearLayout
+            android:id="@+id/contentControl"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="#2c2c5e">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAN"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="#2c2c5e"
+            android:layout_below="@id/contentControl">
+
+            <Switch
+                android:id="@+id/fanSwitch"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "358970009961",
+    "firebase_url": "https://server-monitor-a1972-default-rtdb.firebaseio.com",
+    "project_id": "server-monitor-a1972",
+    "storage_bucket": "server-monitor-a1972.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358970009961:android:6df110812c557b0b71b5f8",
+        "android_client_info": {
+          "package_name": "com.example.servermonitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358970009961-jm5oni5562mf974udrkiiqimgjd4n76u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCruWdLOVfnujYQlgUHMtSjIkPXGv2OzrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358970009961-jm5oni5562mf974udrkiiqimgjd4n76u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
